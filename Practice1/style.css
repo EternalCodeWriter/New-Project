@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+  
+}
+
+head,body{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 25px;
+}
+.left{
+    font-size: 29px;
+    font-weight: 700;
+}
+.right{
+    font-size: 25px;
+    font-weight: 700;
+}
+.nav{
+    /* background-color: blue; */
+    width: 300px;
+}
+.nav li{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.box{
+background-image: url(https://images.pexels.com/photos/18057178/pexels-photo-18057178/free-photo-of-green-pasture-and-snowcapped-mountains-in-the-distance.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+height:500px;
+width: 97%;
+background-size: cover;
+    margin: 0 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+.slog{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    padding-left: 40px;
+    color: #fff;
+}
+#first{
+    margin-top:10px; 
+    
+}
+#sec{
+    margin-top:0px;
+}
+.moto h4{
+    color: #fff;
+    padding-left: 40px;
+    font-size: 17px;
+    font-weight: 400;
+}
+button{
+    height: 40px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+}
+.sign{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 50px;
+    margin-top: 115px;
+}
+#left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.ll{    
+background: transparent;
+border: 1px solid white;
+border-radius: 55%;
+width: 35px;
+height: 35px;
+padding-left: 2.5px;
+}
+.rl{
+background: transparent;
+border: 1px solid white;
+border-radius: 55%;
+width: 35px;
+height: 35px;
+padding-left: 2.5px;
+margin-left: 15px;
+}
+.rights{
+    height: 45px;
+    width: 75px;
+    background-color: rgba(160, 158, 158, 0.541);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+}
+#down{
+   
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+} 
+.box2{
+    height: 300px;
+    width: 97%;
+    margin: 30px 25px;
+}
+.top2{
+    height: 60px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    
+}
+.moto2{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.container{
+    height: 150px;
+    margin-top: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.child{
+    
+    height:140px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.child .logo{
+    background-color: rgba(172, 170, 170, 0.5);  
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400; 
+}
+.child .tag{
+font-size: 18px;
+font-weight: 700;
+margin-top: 15px;
+}
+.child .abt{
+margin-top: 10px;
+font-size: 15px;
+text-align: center;
+font-weight: 600;
+}
+.last{
+    height: 300px;
+    width: 97%;
+    margin: 90px 25px;
+}
+.infos{
+    height: 55px;
+    font-size: 22px;
+}
+.boxes{
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    border-bottom: 1px solid rgb(0, 0, 0);
+   
+    height: 240px;
+    width: 190px;
+    border-radius: 15px;
+}
+.card .img{
+    height: 180px;
+}
+.card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card .more {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facility p{
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+.price p{
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 1px;
+    padding-left: 8px;
+}
+.price span{
+    font-size: 11px;
+    font-weight: 500;
+}
+.side{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+/* .facility .price .side */
