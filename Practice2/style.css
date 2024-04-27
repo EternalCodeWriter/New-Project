@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0 32px;
+    width: 95%;
+    font-family: poppins;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.nav .left{
+        width: 250px;
+}
+.left li{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    gap: 1rem;
+}
+.left li ul a{
+    text-decoration: none;
+    color: black;
+    font-family: poppins;
+    font-size: 16px;
+    transition: all ease 0.5s;
+
+}
+.left li ul a:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.mid h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: poppins;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    width: 250px;
+}
+.right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+    gap: 6px;
+}
+.right button{
+    background-color: transparent;
+    height: 30px;
+    width: 75px;
+    border: none;
+    border-radius: 15px;
+    font-family: dm;
+    font-size: 15px;
+    color: #000;
+    transition: all ease 0.5s;
+}
+.right button:hover{
+    cursor: pointer;
+    
+}
+.right button:nth-child(2){
+    background-color: #000;
+    color: #fff;
+}
+.right button:nth-child(1):hover{
+    background-color: #000;
+    color: #fff;
+}
+/* .right button:nth-child(2):hover{
+    background-color: #582b2b;
+    color: #000;
+} */
+.info{
+    height: 150px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info .para{
+    width: 650px;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+}
+.para span{
+    font-weight: 600;
+}
+.para p{
+    font-size: 42px;
+    font-weight:300;
+}
+.more{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.more .para2{
+    width: 600px;
+}
+.para2 p{
+    font-size: 13px;
+}
+.more>button{
+    background-color: #4f33f0;
+    height: 32px;
+    width: 180px;
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+    transition: all ease 0.5s;
+}
+.more>button:hover{
+    background-color: #339bf0be;
+    cursor: pointer;
+    color: black;
+}
+.box{
+    height: 320px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box .card1{
+    background-image: url(https://images.pexels.com/photos/6778628/pexels-photo-6778628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 100%;
+    width: 410px;
+    border-radius: 15px;
+    background-size: cover;
+
+}
+.box .card2{
+    background-image: url(https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 100%;
+    width: 410px;
+    border-radius: 15px;
+    background-size: cover;
+}
+.box .card3{
+    background-image: url(https://images.pexels.com/photos/139399/bull-landscape-nature-mammal-139399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 100%;
+    width: 410px;
+    border-radius: 15px;
+    background-size: cover;
+
+}
+
+ .tag{
+    
+    height: 50px;
+    margin-top:  250px;
+    padding: 0 25px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag .ltag{
+    height: 90%;
+    width: 75%;
+}
+.ltag p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.tag .rtag{
+    width: 25%;
+    height: 80%;
+    text-align: end;
+}
+.rtag i{
+    font-size: 35px;
+    font-weight: 100;
+    color: #fff;
+   
+}
+/* .end{
+    background-color: #fff;
+    height: 50px;
+} */
