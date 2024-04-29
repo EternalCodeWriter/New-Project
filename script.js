@@ -1,53 +1,59 @@
-// gsap.from(".left",{
-//     y: -30,
-//     color: "purple",
+// gsap.from(".page1",{
 //     opacity: 0,
-//     duration: 1,
-//     delay: 1
+//     scale: 0,
+//     delay: 1,
+//     duration: 2,
+//     rotate: 360
 // })
+//                         Scrolling Animation of the text present in the Page 2
 
-// gsap.from("a",{
-//     y: -30,
-//     opacity: 0,
-//     color: "green",
-//     delay: 0.5,
-//     stagger: 1
-// })
-// gsap.from("h1",{
-//     y: -150,
-//     color: "royalblue",
-//     opacity: 0,
-//     duration: 1.5,
-//     delay: 4
-// })
+gsap.to(".page2 h1",{
+    transform: "translateX(-90%)",
+    scrollTrigger: {
+        trigger: ".page2",
+        scroller: "body",
+        markers: false,
+        start: "top 0%",
+        end: "top -90%",
+        scrub:2,
+        pin: true
+    }
 
+})
 var tl = gsap.timeline()
 
-
-//                                                       new GSAP for smooth animation
-tl.from(".nav",{
-    y: -30,
-    x: -500,
+tl.from(".page3 .left button",{
+    y: 800,
+    x: -600,
     opacity: 0,
+    scale: 0,
     duration: 2,
-    delay: 1,
+    stagger: 1,
+    scrollTrigger: {
+           trigger: ".page3",
+           scroller: "body",
+           markers: false,
+           start: "top 15%",
+           end: "top 110%",
+           scrub: 2
+    }
 })
-// tl.from("#link",{
-//     y: -30,
-//     opacity: 0,
-//     duration: 0.2,
-//     stagger: 1
-// })
-tl.from("h1",{
-    y: -150,
-    color: "royalblue",
+
+tl.from(".page3 .right button",{
+    y: 800,
+    x: 600,
     opacity: 0,
-    duration: 1
-})
-tl.from("button ",{
-    y:-30,
-    x: 50,
-    opacity: 0,
-    duration: 0.3,
-    stagger: 1
+    scale: 0,
+    duration: 2,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: ".page3",
+        scroller: "body",
+        markers: false,
+        start: "top 15%",
+        end: "top 110%",
+        scrub: 2
+    }
+
+
 })
