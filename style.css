@@ -30,75 +30,138 @@ body {
     background-color: #fff;
 }
 
+
 .page1 {
     background-color: #a8a2a2c2;
     height: 100%;
     font-family: 'Nunito', sans-serif;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center; */
     justify-content: center;
+    padding: 4rem;
+    padding-top: 0.5rem;
+    position: relative;
 
+    & .nav{
+        /* background-color: red; */
+        height: 50px;
+        width: 600px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 300px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+         backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    & .nav ul{
+        height: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+    }
+    & .nav ul li a{ 
+        font-size: 18px;
+        font-weight: 600;
+        transition: all ease 0.3s;
+        text-decoration: none;
+        color: #000;
+        border-radius: 10px;
+        padding-inline: 8px;
+    }
+    & .nav ul li a:hover{
+        cursor: pointer;
+        color: #fff;
+    }
+
+    /* & .string{
+        background-color: transparent;
+    } */
     & .box {
-        background-color: rgba(18, 18, 243, 0.486);
         border-radius: 20px;
-        height: 400px;
+        height: 200px;
         width: 800px;
         padding: 5px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* align-items: center; */
+        /* margin-top: 10px; */
     }
 
     & h3 {
-        font-family: poppins;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
         color: #fff;
-        font-size: 20px;
+        font-size: 15px;
+        margin-top:30px;
     }
 
-    & h1 {
-        color: rgba(241, 237, 233, 0.932);
-        text-shadow: 1px 4px;
-        font-size: 50px;
-        font-weight: 700;
+    & .h1 {
+        color: #222;
+        font-size: 20px;
+        font-weight: 600;
         line-height: 5rem;
         letter-spacing: 8px;
-        font-family: "Dancing Script", cursive;
+        font-family: "poppins";
     }
 
+    
     & .web {
         font-family: fantasy;
-        font-size: 140px;
+        font-size: 80px;
         font-weight: 500;
-        line-height: 120px;
-        margin-top: 30px;
+        line-height: 90px;
+        /* margin-bottom: 30px; */
         color: transparent;
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: #fff;
     }
 
     & h2 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 65px;
-        writing-mode: vertical-lr;
-        /* display: contents;KU */
-        float: left;
-        margin-top: 35px;
-        color: #e9ddddb0;
+        font-size: 35px;
+        font-weight: 600;
+        float: top;
+        margin-bottom: 5px;
+        color: transparent;
+        text-transform: uppercase;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #222;        
     }
+
+    /*                                                       Vertical text style        */
+    /* & h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 52px;
+        font-weight: 500;
+        writing-mode: vertical-lr;
+        float: left;
+        margin-top: 7px;
+        color: #222;
+        text-transform: uppercase;
+    } */
 
     & .lc {
         /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-        font-family: "Dancing Script", cursive;
-        letter-spacing: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 3px;
         text-align: right;
-        margin-top: 40px;
-        color: #ffffff;
-        font-weight: 300;
+        /* margin-bottom: 10px; */
+        color: #000;
+        font-weight: 600;
+        width: 320px;
+        position: absolute;
+        right: 5%;
+        bottom: 6%;
     }
-
+    
     & span {
-        background-color: #111111;
+        /* background-color: #111111; */
         padding-inline: 10px;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -113,51 +176,45 @@ body {
     align-items: center;
 
     & h1 {
-        color: transparent;
+        color: black;
         font-family: "poppins";
         font-size: 75vh;
         text-wrap: nowrap;
         text-transform: uppercase;
-        font-weight: 700;
-        background: linear-gradient(to right, rgb(241, 59, 59), rgb(63, 63, 247));
-        -webkit-background-clip: text;
-        text-shadow: 0 0 60px rgba(245, 42, 42, 0.452);
-        animation: anim 2s infinite alternate;
+        font-weight: 500;
+        /* text-shadow: 0 0 60px rgba(245, 42, 42, 0.452); */
+        /* animation: anim 2s infinite alternate; */
     }
 }
 
 @keyframes anim {
     100% {
-        text-shadow: 0 0 60px rgba(77, 108, 243, 0.384);
+        text-shadow: 0 0 60px rgba(232, 233, 238, 0.384);
     }
 }
 
 .page3 {
     background-color: #a8a2a2c2;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     font-family: 'Nunito', sans-serif;
 
-    & .left {
+    & .link {
+        /* background-color: #fff; */
         height: 600px;
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 800px;
+        text-align: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
         /* justify-content: center; */
     }
 
-    & .right {
-        height: 600px;
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
-    }
+    
 }
 
 & button {
